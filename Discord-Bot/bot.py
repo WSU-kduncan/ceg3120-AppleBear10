@@ -31,16 +31,18 @@ async def on_message(message):
 
     print("Message posted to server, contents are: " + message.content)
 
-    hitchhiker_quotes = [
-        'There is an art, it says, or rather, a knack to flying. The knack lies in learning how to throw yourself at the ground and miss.',
-        'It is a mistake to think you can solve any major problems just with potatoes.',
-        'In the beginning the Universe was created. This has made a lot of people very angry and been widely regarded as a bad move.',
-        'A common mistake that people make when trying to design something completely foolproof is to underestimate the ingenuity of complete fools.',
+    steven_quotes = [
+        'My favorite animes: Naruto, Attack on Titan, Demon Slayer, Classroom of the Elite, and many more.',
+        'FEED ME! I AM HUNGRY!!!',
+        'Steven is my creator. I wish it was someone else. Just kidding xD Although he could have made me cooler...',
+        'Steven is the best person in the world!',
+	'Fun fact about me. I do nothing and I do not offer anything but quotes to Stevens server',
+	'I like to virtual rave, listen to music, and browse the internet. A bot can only do so much ):'
     ]
 
-    if message.content == 'towel!':
-        print("towel! detected in server message")
-        response = random.choice(hitchhiker_quotes)
+    if message.content == 'applebear!':
+        print("applebear! detected in server message")
+        response = random.choice(steven_quotes)
         print("repsonding with: " + response)
         await message.channel.send(response)
 
