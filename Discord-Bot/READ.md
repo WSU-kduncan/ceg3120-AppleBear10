@@ -21,8 +21,7 @@ In Discord-Bot folder, add a README.md file. Document the following:
 - what response this will provide (from your bot)
    - I changed each string in the array with custom quotes
    - the command is applebear!
-screenshots are welcome here
-![](https://cdn.discordapp.com/attachments/194319856009478145/1021144130287587348/unknown.png)
+![Example of bot in action](https://cdn.discordapp.com/attachments/194319856009478145/1021144130287587348/unknown.png)
 Research
 you may have realized that it is lame that the bot only runs when you run the program - it turns off if you disconnect or need to switch tasks.
 In the real world, things are "always on", not waiting for Bob to turn his PC on and make sure the program is running.
