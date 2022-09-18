@@ -22,7 +22,14 @@ In Discord-Bot folder, add a README.md file. Document the following:
    - I changed each string in the array with custom quotes
    - the command is applebear!
 ![](https://cdn.discordapp.com/attachments/194319856009478145/1021144130287587348/unknown.png)
-Research
-you may have realized that it is lame that the bot only runs when you run the program - it turns off if you disconnect or need to switch tasks.
-In the real world, things are "always on", not waiting for Bob to turn his PC on and make sure the program is running.
-Research some possible solutions that would solve this, and discuss why you think it would work.
+**Research**
+- you may have realized that it is lame that the bot only runs when you run the program - it turns off if you disconnect or need to switch tasks
+- In the real world, things are "always on", not waiting for Bob to turn his PC on and make sure the program is running
+- Research some possible solutions that would solve this, and discuss why you think it would work
+  - One way to keep a discord bot on is to host the script on a server at all times
+  - You can actually purchase a VPS (Virtual Private Server) for the bot to be hosted on and it will run at all times
+
+  - Another way is to get a rasperry pi
+  - It's essentially a mini computer that you could purchase for $50
+  - Uses alot less power and has less advanced hardware but sufficient enough for a discord bot
+  - You can also install an OS on there therefore Linux and be able to use it
