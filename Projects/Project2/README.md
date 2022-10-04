@@ -60,17 +60,25 @@ For each step below, provide a screenshot that shows the network resource has be
 
 1. Create a new instance. Give a write up of the following information:
    - AMI selected
+     - The Amazon Machine Image (AMI) selected was ubunutu
      - default username of the instance type selected
-   - Instance type selected
+   - Instance type selected: t2.micro
 2. Attach the instance to your VPC. As discussed there are different pathways to doing this. Say how you did it.
+   - When creating an instance go under network settings and change the VPC to your specified VPC that you named. For me it was Cao-VPC.
 3. Determine whether a Public IPv4 address will be auto-assigned to the instance. Justify your choice to do so (or not do so)
+   - I chose to disable auto assign. Manually assigning in my opinion is better.
    - **NOTE** - in the next few steps, you will be required to request an Elastic IP address and associate it to the instance. Factor that in to your discussion here.
 4. Attach a volume to your instance. As discussed there are different pathways to doing this. Say how you did it.
+   - 1 x 8 GiB gp2 Root volume
+   - This is done through launching instance under the configure storage
 5. Tag your instance with a "Name" of "YOURLASTNAME-instance". Say how you did it.
+   - On the very top of the page after launching instance, there is a tag area you can  fill in. First will be "Name" and then "Cao-instance" for me.
 6. Associate your security group, "YOURLASTNAME-sg" to your instance. Say how you did it.
+   - Go to the tab that says security group. Fill in the information for it with a tag. For me it was Cao-sg. Once that is created click on the security group and on the top right click on the drop down arrow   and select "associate". Once that is done when you're creating the instance you can select that specific security group that is listed only if you associated it.
 7. Reserve an Elastic IP address. Tag it with "YOURLASTNAME-EIP". Associate the Elastic IP with your instance. Say how you did it.
-8. Create a screenshot your instance details and add it to your project write up. Example below:
-   ![sample instance details](sample.png)
+   - Under Network and Security go to Elastic IP. On the top right click allocate. Create a tag with "Name" and for me "Cao-EIP". Check mark the box of the EIP and associate Elastic IP address. 
+8. Create a screenshot your instance details and add it to your project write up.
+   ![instance details](https://cdn.discordapp.com/attachments/811148913523687434/1026697392877224007/Part2_8.png)
 9. `ssh` in to your instance. Change the hostname to "YOURLASTNAME-AMI" where AMI is some version of the AMI you chose. Say how you did it.
    1. It is wise to copy config files you are about to change to filename.old For `/etc/hostname`, for example, I would first copy the current `hostname` file to `/etc/hostname.old`
    2. You should not change permissions on any files you are modifying. They are system config files. You may need to access them with administrative privileges.
