@@ -33,14 +33,17 @@ For each step below, provide a screenshot that shows the network resource has be
    - Tag it with "YOURLASTNAME-Subnet"
    - Specify a /28 private IP address range
    - Attach it to your VPC
+![](https://cdn.discordapp.com/attachments/811148913523687434/1026681224628011048/Part1_2.png)
 3. Create an internet gateway
    - Tag it with "YOURLASTNAME-gw"
    - Attach it to your VPC
+![](https://cdn.discordapp.com/attachments/811148913523687434/1026681629218963518/Part1_3.png)
 4. Create a route table
    - Tag it with "YOURLASTNAME-routetable"
    - Attach it to your VPC
    - Associate it with your subnet
    - Add a routing table rule that sends traffic to all destinations to your internet gateway
+![](https://cdn.discordapp.com/attachments/811148913523687434/1026682314354335874/Part1_4.png)
 5. Create a security group
    - Tag it with "YOURLASTNAME-sg"
    - Allow SSH for a set of trusted networks including:
@@ -49,6 +52,8 @@ For each step below, provide a screenshot that shows the network resource has be
      - Instances within the VPC
    - Attach it to your VPC
    - Image should include your Inbound rules
+![](https://cdn.discordapp.com/attachments/811148913523687434/1026682929998462986/Part1_5.1.png)
+![](https://cdn.discordapp.com/attachments/811148913523687434/1026682348445651064/Part1_5.png)
 6. (If necessary, else skip) Create a key pair
 
 ## Part 2 - EC2 instances
