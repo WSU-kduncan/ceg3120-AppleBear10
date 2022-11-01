@@ -1,6 +1,7 @@
 # Project 4 Write Up
 
-Name: Steven Cao
+Name: Steven Ca
+
 Email: cao.19@wright.edu
 
 ## CloudFormation template
@@ -21,6 +22,8 @@ Email: cao.19@wright.edu
    - create two total backend host instances
      - in /etc/hosts added:
      - Attached them to a private subnet
+
+
 ![backend-servers](https://cdn.discordapp.com/attachments/811148913523687434/1036821148970795158/unknown.png)
    - install webserver of choice on each instance
      - Installed apache2 web servers
@@ -34,6 +37,9 @@ Email: cao.19@wright.edu
 1. Create an `/etc/hosts` OR `.ssh/config` file on each system that correlates hostnames to private IPs  
      - sudo vim /etc/hosts
      - added the following requirements that correlates to hostnames to private IPs
+
+
+
 ![Requirements](https://cdn.discordapp.com/attachments/811148913523687434/1036823921846140998/unknown.png)
 
 2. Document how to SSH in between the systems utilizing their private IPs.
@@ -65,7 +71,7 @@ Email: cao.19@wright.edu
      - Needed to install apache2 web service with command: sudo apt install apache2
      - Then you needed to enable with: sudo systemctl enable apache2
      - After that is done you can start it with: sudo systemctl start apache2
-     - Once that is done you can create an index file for web server 1 with: $echo "<H1>Hello! This is webserver1: 10.0.1.9</H1>" | sudo tee /var/ww/html/indexsrv1.html
+     - Once that is done you can create an index file for web server 1 with: $ echo <H1>Hello! This is webserver1: 10.0.1.9</H1> | sudo tee /var/ww/html/indexsrv1.html
      - Make sure to add the correct .html file provided by the professor and chmod 400 the file
      - Repeat the steps for web server 2
      - One that is done make sure to configure haproxy or check if it's working
