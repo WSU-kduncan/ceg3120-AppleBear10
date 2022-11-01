@@ -5,13 +5,19 @@ Email: cao.19@wright.edu
 
 ## CloudFormation template
    - Made multiple changes to the cloud formation template to fit the requirements.
+   - Took note of the subnet range for CidrBlock: 10.0.0.0/24 to be from 10.0.0.4/24 - 10.0.0.255. Same with CidrBlock: 10.0.1.0/24 to be from 10.0.1.7/24 - 10.0.1.255
+   - Added a home ip address under SecurityGroupIngress: CidrIp: 98.29.55.9/32
+   - Under ProxyInstance: I added a haproxy installation.
+     - apt-get install -y \
+     - haproxy && \ (note I used && because it was the last installation and there was a new command after it)
+   - Made two unique PrivateIpAddresses for WebServ1Instance (10.0.1.10) and WebServ2Instance (10.0.1.9)
+   - Installed apache2 on both WebServInstances
+     - apt-get install -y \
+     - apache2 && \ (Used && for the same reason above)
+   - Added a hostname by doing:
+     - hostnamectl set-hostname "ceg3120s1-s2" && \
 
-1. Modify the Security Group Ingress rules to have the following additional rules:
-   - Access HTTP from any IP address
-   - Access HTTP from within the VPC
-2. For the HAProxy instance:
-   - install haproxy
-3. For the pool of content servers:
+## For the pool of content servers:
    - create two total backend host instances
    - attach them to the private subnet
    - assign each instance a unique private IP within the private subnet
