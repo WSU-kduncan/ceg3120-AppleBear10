@@ -71,7 +71,7 @@ Email: cao.19@wright.edu
      - Needed to install apache2 web service with command: sudo apt install apache2
      - Then you needed to enable with: sudo systemctl enable apache2
      - After that is done you can start it with: sudo systemctl start apache2
-     - Once that is done you can create an index file for web server 1 with: $ echo <H1>Hello! This is webserver1: 10.0.1.9</H1> | sudo tee /var/ww/html/indexsrv1.html
+     - Once that is done you can create an index file for web server 1 with: $echo < H1 >Hello! This is webserver1: 10.0.1.9< /H1 > | sudo tee /var/ww/html/indexsrv1.html
      - Make sure to add the correct .html file provided by the professor and chmod 400 the file
      - Repeat the steps for web server 2
      - One that is done make sure to configure haproxy or check if it's working
