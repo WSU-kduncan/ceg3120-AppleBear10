@@ -46,7 +46,12 @@ Email: cao.19@wright.edu
      - sudo ~/.ssh/config
      - Added two hosts that correlated to the corresponding servers with their specified private IPs
      - The picture below shows how to do so
+
+
 ![Requirements](https://cdn.discordapp.com/attachments/811148913523687434/1036824229334753331/unknown.png)
+
+
+
      - Once you have set that up you can ssh into proxy first and then switch to either servers with commands:
      - ssh -i /home/scao/ceg3120-AppleBear10/ceg3120key.pem ubuntu@10.0.1.10 (Server1)
      - ssh -i /home/scao/ceg3120-AppleBear10/ceg3120key.pem ubuntu@10.0.1.9 (Server2)
